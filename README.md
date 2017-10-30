@@ -37,15 +37,15 @@ This bot is still a **beginner**.
 This what he **can** do:
 
 + make paperclips
-+ buy Autoclippers
-+ buy new Wire when exceeded
++ buy autoclippers
++ buy new wire when exceeded
 + lower/raise price according to production
 + buy marketing
 + buy memory
 + buy processor
 + buy technology
 
-This is he **can't** do _yet_:
+This is what he **can't** do _yet_:
 
 - play tournaments
 - manage 2nd tech generation
