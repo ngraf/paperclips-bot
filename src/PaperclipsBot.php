@@ -3,21 +3,23 @@
 class PaperclipsBot
 {
     /**
-     * @var int interval in micro seconds (1 second = 1.000.000 ms) to tedious boring work, f.e. "Make Paperclip"
+     * @var int interval in micro seconds (1 second = 1.000.000 ms) for boring work, f.e. "Make Paperclip"
      */
     private $highFrequencyHeartbeat = 100000;
 
     /**
-     * @var int interval in micro seconds (1 second = 1.000.000 ms) to important work, f.e. buying stuff
+     * @var int interval in micro seconds (1 second = 1.000.000 ms) for important work, f.e. buying stuff
      */
     private $lowFrequencyHeartbeat = 5000000;
 
     private $playing = false;
 
     /**
-     * @var string This is the order what to buy with trust. 'M' stands for 'Memory', 'P' stands for 'Processor'.
+     * @var array More or less important rules for bot's behaviour.
+     *            These values make the difference between good or bad performance.
      */
     private $behaviour = [
+        // This is the order what to buy with trust. 'M' stands for 'Memory', 'P' stands for 'Processor'.
         'trustStrategy' => 'MPMMPMMMPMMPMPM',
         'autoclipper_max_price' => 100,
         'keep_x_dollars_in_your_pocket_for_wire' => 30,

@@ -16,6 +16,11 @@ class PaperClipsPage
         $this->webdriver = RemoteWebDriver::create('http://' . CONFIG_SELENIUM_HOST .'/wd/hub', DesiredCapabilities::chrome());
     }
 
+    public function openPaperClips()
+    {
+        $this->webdriver->get(CONFIG_PAPERCLIP_URL);
+    }
+
     public function isAutoClipperAvailable()
     {
         try {
@@ -29,11 +34,6 @@ class PaperClipsPage
     public function buyAutoClipper()
     {
         $this->webdriver->findElement(WebDriverBy::cssSelector('#btnMakeClipper:not([disabled])'))->click();
-    }
-
-    public function openPaperClips()
-    {
-        $this->webdriver->get(CONFIG_PAPERCLIP_URL);
     }
 
     public function makePaperClip()
