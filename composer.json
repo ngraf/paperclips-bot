@@ -1,0 +1,16 @@
+{
+  "name": "grafn/paperclips-bot",
+  "description": "selenium bot playing http://www.decisionproblem.com/paperclips/index2.html",
+  "keywords": [
+    "paperclips",
+    "webdriver",
+    "bot"
+  ],
+  "require": {
+    "php": ">=7",
+    "facebook/webdriver": "~1.0"
+  },
+  "autoload": {
+    "classmap" : ["src/"]
+  }
+}
